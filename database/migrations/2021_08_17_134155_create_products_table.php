@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->bigIncrements('id_pro');
             $table->string('image');
             $table->string('name');
-            $table->decimal('pice',8,2);
+            $table->decimal('pice',9,2);
             $table->text('detail');
             $table->timestamps();
         });
