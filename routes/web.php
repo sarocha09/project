@@ -17,10 +17,46 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//route admin
-Route::get('/index','Admin\AdminController@index')->name('index');
-Route::get('/ProductForm','Admin\AdminController@showproduct')->name('productfrom');
-Route::get('/TypeproductForm','Admin\AdminController@showtypeproduct')->name('typeproductfrom');
+//admin
+Route::get('admin/index','Admin\AdminController@index')->name('index');
+
+//product
+Route::get('admin/product/index','Admin\ProductController@index')->name('product.index');
+
+//typeproduct
+Route::get('admin/typeproduct/index','Admin\TypeproductController@index')->name('typeproduct.index');
+
+//user
+Route::get('admin/user/index','Admin\UserController@index')->name('user.index');
+
+//background
+Route::get('admin/background/index','Admin\BackgroundController@index')->name('background.index');
+
+//content
+Route::get('admin/content/index','Admin\ContentController@index')->name('content.index');
+
+//homepage
+Route::get('admin/homepage/index','Admin\HomepageController@index')->name('homepage.index');
+
+//welcome
+Route::get('/layouts/front_end/index', function () {
+    return view('/layouts/front_end/index');
+    });
+
+Route::get('/layouts/front_end/menu', function () {
+    return view('/layouts/front_end/menu');
+    });
+
+Route::get('/layouts/front_end/contact', function () {
+    return view('/layouts/front_end/contact');
+    });
+
+Route::get('/layouts/front_end/login', function () {
+    return view('/layouts/front_end/login');
+    });
+
+            
+
 
 Auth::routes();
 

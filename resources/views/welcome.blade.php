@@ -1,100 +1,94 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.front_end.index')
+@section('index')
 
-        <title>บ้านกาแฟสด</title>
+<div class="container">
+            <div class="row">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+                <div class ="col-4">
+                    <img class="img-fluid" src="front_end/assets/img/stbr.jpg" />
+                    <span class="caption text-muted">รูปใช้เพื่อการโฆษณาเท่านั้น</span>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="col-8">
+                    <h2 class="section-heading">ร้านบ้านกาแฟสด</h2> 
+                    <p>ร้านกาแฟเป็นร้านที่ใครหลาย ๆ คนพบเจอได้ในทุกสถานที่
+                        ไม่ว่าจะเป็นสวนสาธารณะ ห้างสรรพสินค้า หรือริมข้างทาง
+                        ซึ่งร้านบ้านกาแฟสดเป็นร้านข้างทางที่ใช้บ้านพักอาศัย
+                        มาดัดแปลงต่อเติมเป็นร้านกาแฟขนาดเล็กและ
+                        มีราคาย่อมเยา ที่ทุกคนสามารถเข้าถึงได้</p>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+            </div>
+
+            <div class ="row">
+                <div class="col">
+                    <h2 class="section-heading text-center">เมนูแนะนำ</h2> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="front_end/assets/img/hotcoffee.jpg" class="img-thumbnail">
+                    <h5 class="text-center">ลาเต้</h5>
+                </div>
+                <div class="col-4">
+                    <img src="front_end/assets/img/cherry.jpg" class="img-thumbnail">
+                    <h5 class="text-center">อิตาเลี่ยนโซดา</h5>
+                </div>
+                <div class="col-4">
+                    <img src="front_end/assets/img/coco.jpg" class="img-thumbnail">
+                    <h5 class="text-center">โกโก้</h5>
+                </div>
+           </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <h2 class="section-heading text-center">เกล็ดความรู้</h2>
+                    <h4 class="text-center">สายพันธุ์เมล็ดกาแฟที่ดีที่สุด</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="front_end/assets/img/arabica.jpg" class="img-fluid rounded-start">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">อราบิก้า (Arabica)</h5>
+                                    <p class="card-text">คนที่รักความกลมกล่อมกลิ่นหอมและรสชาตินุ่มละมุนของกาแฟมักจะตกหลุมรัก
+                                        กาแฟสายพันธุ์นี้ นิยมปลูกมากที่สุดเป็นอันดับหนึ่งของโลกถึงร้อยละ 80 
+                                        และเป็นกาแฟที่ได้รับความนิยมสูงสุดในร้านกาแฟสดทั่วโลก ขณะเดียวกันอราบิก้าก็ปลูกยากและต้องการการควบคุมด้านคุณภาพการปลูกมากเช่นกันอราบิก้าให้ปริมาณคาเฟอีนไม่เข้มข้นมากอยู่ในระดับ1.1-1.7เปอร์เซ็นต์ 
+                                        ตามถิ่นกำเนิดอราบิก้าเป็นกาแฟที่รักอากาศเย็นสบายราว15-25 องศาฯ 
+                                        จึงเหมาะที่จะปลูกในที่ภูมิประเทศสูงกว่า1,000 เมตรจากระดับน้ำทะเล และแน่นอนว่าราคาของกาแฟก็แตกต่างตามคุณภาพของแต่ละสายพันธุ์อีกด้วย</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                <h5 class="card-title">โรบัสต้า (Robusta)</h5>
+                                <p class="card-text">คอกาแฟเข้มข้นตัวจริงไม่ควรพลาดกาแฟโรบัสต้าเพราะมีปริมาณความเข้มข้นของคาเฟอีนถึง 2-4.5 เปอร์เซ็นต์ อีกทั้งบอดี้ (ความเข้มข้น) 
+                                    ยังให้รสชาติเข้มกว่าอราบิก้าด้วยความเข้มสูงกว่าเท่าตัวของโรบัสต้าจึงทำให้
+                                    นิยมนำไปผลิตเป็นกาแฟสำเร็จรูป (Instant Coffee) และ 3 in 1
+                                    วันไหนที่คุณต้องเดินทางไกลหรืออยากให้ร่างกายตื่นตัวตลอดวัน แค่เลือกกาแฟโรบัสต้าชงดื่มเองก็พร้อมลุยทุกเส้นทาง 
+                                    รวมถึงการนำไปผสมกับกาแฟสายพันธุ์อื่นที่เรียกว่า “กาแฟเบลนด์” (Blend Coffee)นั่นเอง โรบัสต้าดูแลง่ายปลูกง่ายรักอากาศร้อนชื้นแบบภาคใต้ของบ้านเรา แข็งแรง ทนทานต่อโรคต่างๆ ได้ดี ให้ผลผลิตสูง และการดูแลรักษาก็ไม่ยากด้วยนะ</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="front_end/assets/img/robusta (1).jpg" class="img-fluid rounded-start">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+@endsection

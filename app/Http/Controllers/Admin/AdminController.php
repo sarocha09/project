@@ -11,12 +11,4 @@ class AdminController extends Controller
         return view('admin.index');
     }
 
-    public function showproduct(){
-        return view('admin.product.productfrom');
-    }
-
-    public function showtypeproduct(){
-        return view('admin.typeproduct.typeproductfrom');
-    }
-
 }

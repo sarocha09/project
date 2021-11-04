@@ -35,7 +35,7 @@
                     Register
 					</span>
 					<span class="login100-form-avatar">
-                    <img src="{{asset('back_end/images/logo.jpg')}}" alt="AVATAR">
+                    <img src="{{asset('back_end/images/logo.gif')}}" alt="AVATAR">
 					</span>
 
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
