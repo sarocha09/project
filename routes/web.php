@@ -22,12 +22,29 @@ Route::get('admin/index','Admin\AdminController@index')->name('index');
 
 //product
 Route::get('admin/product/index','Admin\ProductController@index')->name('product.index');
+Route::get('admin/product/add','Admin\ProductController@add');
+Route::get('admin/product/edit/{id}','Admin\ProductController@edit');
+Route::post('admin/product/store','Admin\ProductController@store');
+Route::post('admin/product/update/{id}','Admin\ProductController@do_update');
+Route::get('admin/product/delete/{id}','Admin\ProductController@do_delete');
 
 //typeproduct
 Route::get('admin/typeproduct/index','Admin\TypeproductController@index')->name('typeproduct.index');
+Route::get('admin/typeproduct/add','Admin\TypeproductController@add');
+Route::get('admin/typeproduct/edit/{id}','Admin\TypeproductController@edit');
+Route::post('admin/typeproduct/store','Admin\TypeproductController@store');
+Route::post('admin/typeproduct/update','Admin\TypeproductController@do_update');
+Route::get('admin/typeproduct/delete/{id}','Admin\TypeproductController@do_delete');
+
 
 //user
 Route::get('admin/user/index','Admin\UserController@index')->name('user.index');
+Route::get('admin/user/add','Admin\UserController@add');
+Route::get('admin/user/edit/{id}','Admin\UserController@edit');
+Route::post('admin/user/store','Admin\UserController@store');
+Route::post('admin/user/update','Admin\UserController@do_update');
+Route::get('admin/user/delete/{id}','Admin\UserController@do_delete');
+
 
 //background
 Route::get('admin/background/index','Admin\BackgroundController@index')->name('background.index');

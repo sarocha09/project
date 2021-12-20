@@ -1,5 +1,5 @@
 <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('index')}}">
         <div class="sidebar-brand-icon">
           <img src="{{asset('admin/img/logo/coffee_logo.jpg')}}">
         </div>
@@ -63,7 +63,7 @@
       </li> -->
      
       <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="{{route('user.index')}}">
           <i class="fas fa-fw fa-user"></i>
           <span>หน้า User</span>
         </a>
@@ -80,30 +80,30 @@
           <span>หน้า Product</span>
         </a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="{{route('background.index')}}">
           <i class="fas fa-fw fa-image"></i>
           <span>หน้า Background</span>
         </a>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="{{route('index')}}">
           <i class="fas fa-fw fa-child"></i>
           <span>หน้า Admin</span>
         </a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="{{route('content.index')}}">
           <i class="fas fa-fw fa-shopping-bag"></i>
           <span>หน้า Content</span>
         </a>
-      </li>
-      <li class="nav-item">
+      </li> -->
+      <!-- <li class="nav-item">
         <a class="nav-link" href="{{route('homepage.index')}}">
           <i class="fas fa-fw fa-home"></i>
           <span>หน้า Homepage</span>
         </a>
-      </li>
+      </li> -->
       <!-- <hr class="sidebar-divider">
       <div class="sidebar-heading">
         Examples

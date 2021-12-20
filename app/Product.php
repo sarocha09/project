@@ -8,10 +8,23 @@ class Product extends Model
 {
     protected $table = 'products';
     protected $fillable = [
-        'image',
-        'name',
-        'pice',
-        'detail',
-        'category_id'
+
+        "product_code",
+        "image",
+        "name",
+        "pice",
+        "product_type",
+        "detail",
+        "created_by",
+        "updated_by",
+        'type_id',
+
     ];
+    protected $primaryKey = 'id_pro'; 
+
+    public function type()
+    {
+        return $this->belongsTo('App\Typeproduct', 'type_id');
+    }
+
 }
