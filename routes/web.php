@@ -60,9 +60,15 @@ Route::get('/layouts/front_end/index', function () {
     return view('/layouts/front_end/index');
     });
 
-Route::get('/layouts/front_end/menu', function () {
-    return view('/layouts/front_end/menu');
-    });
+// Route::get('/layouts/front_end/menu', function () {
+//     return view('/layouts/front_end/menu');
+//     });
+
+Route::get('/layouts/front_end/menu','MenuController@index');
+
+// Route::get('admin/product/index','Admin\ProductController@index')->name('product.index');
+
+
 
 Route::get('/layouts/front_end/contact', function () {
     return view('/layouts/front_end/contact');

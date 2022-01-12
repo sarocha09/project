@@ -86,12 +86,12 @@
           <span>หน้า Background</span>
         </a>
       </li> -->
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="{{route('index')}}">
           <i class="fas fa-fw fa-child"></i>
           <span>หน้า Admin</span>
         </a>
-      </li>
+      </li> -->
       <!-- <li class="nav-item">
         <a class="nav-link" href="{{route('content.index')}}">
           <i class="fas fa-fw fa-shopping-bag"></i>

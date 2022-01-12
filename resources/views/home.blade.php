@@ -27,11 +27,15 @@
                         </div>
 
                     @endif
+
+
                     <strong>  username : </strong> {{ Auth::user()->username }} <br>
                     <strong>  Phone : </strong> {{ Auth::user()->phone }} <br>
 
+                    @if (Auth::user()->checkIsAdmin()) 
                     <a href="{{route('index')}}" class="btn btn-primary">Product Mangements</a>
-                    <a href="" class="btn btn-success">Home</a>
+                     @endif 
+                    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
 
                 </div>
 
