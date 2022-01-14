@@ -1,19 +1,19 @@
-@include('layouts/admin/head') 
+@include('layouts/admin/head')
 
 
 <body id="page-top">
   <div id="wrapper">
     <!-- Sidebar -->
-   
-@include('layouts/admin/sidebar')
-   
+
+    @include('layouts/admin/sidebar')
+
     <!-- Sidebar -->
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
         <!-- TopBar -->
-   
-@include('layouts/admin/header')
-   
+
+        @include('layouts/admin/header')
+
         <!-- Topbar -->
 
         <!-- Container Fluid-->
@@ -26,82 +26,64 @@
             </ol>
           </div>
 
-          <div class="row mb-3">
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Earnings (Monthly)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
+          <div class="container">
+            <div class="row align-items-start">
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="row align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-uppercase mb-1">Typeproduct</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
+                        <!-- <div class="mt-2 mb-0 text-muted text-xs">
                         <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
                         <span>Since last month</span>
+                      </div> -->
                       </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-primary"></i>
+                      <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-primary"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Earnings (Annual) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">สินค้า</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">650</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
+              <!-- Earnings (Annual) Card Example -->
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-uppercase mb-1">Products</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">30</div>
+                        <!-- <div class="mt-2 mb-0 text-muted text-xs">
                         <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
                         <span>Since last years</span>
+                      </div> -->
                       </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-shopping-cart fa-2x text-success"></i>
+                      <div class="col-auto">
+                        <i class="fas fa-shopping-cart fa-2x text-success"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- New User Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">ผู้ใช้</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">366</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
+              <!-- New User Card Example -->
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-uppercase mb-1">User</div>
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">2</div>
+                        <!-- <div class="mt-2 mb-0 text-muted text-xs">
                         <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 20.4%</span>
                         <span>Since last month</span>
+                      </div> -->
                       </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Pending Requests</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
-                        <span>Since yesterday</span>
+                      <div class="col-auto">
+                        <i class="fas fa-users fa-2x text-info"></i>
                       </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-warning"></i>
                     </div>
                   </div>
                 </div>
@@ -109,34 +91,55 @@
             </div>
 
             <!-- Area Chart -->
+
             <div class="col-xl-12 col-lg-12">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Monthly Recap Report</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                      aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
+              <!-- <div class="card mb-4"> -->
+              <div class="card-header border-0">
+                <h3 class="card-title">User</h3>
+                <div class="card-tools">
                 </div>
               </div>
+
+              <!-- <div class="card-body table-responsive p-0"> -->
+
+              <table class="table table-striped table-valign-middle">
+                <thead>
+                  <tr>
+                    <th>username</th>
+                    <th>phone</th>
+                  </tr>
+                </thead>
+                @foreach ($user as $userna)
+                <tbody>
+                  <tr>
+                    <td>
+                      <!-- <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2"> -->
+                      {{$userna->username}}
+                    </td>
+                    <td>{{$userna->phone}}</td>
+                    <td>
+                      <small class="text-success mr-1">
+
+
+                      </small>
+
+                    </td>
+                    <td>
+                      <a href="#" class="text-muted">
+
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+                @endforeach
+              </table>
             </div>
-            <!-- Pie Chart -->
-            <!-- <div class="col-xl-4 col-lg-5">
+          </div>
+
+        </div>
+      </div>
+      <!-- Pie Chart -->
+      <!-- <div class="col-xl-4 col-lg-5">
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary">Products Sold</h6>
@@ -208,8 +211,8 @@
                 </div>
               </div>
             </div> -->
-            <!-- Invoice Example -->
-            <!-- <div class="col-xl-8 col-lg-7 mb-4">
+      <!-- Invoice Example -->
+      <!-- <div class="col-xl-8 col-lg-7 mb-4">
               <div class="card">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary">Invoice</h6>
@@ -269,8 +272,8 @@
                 <div class="card-footer"></div>
               </div>
             </div> -->
-            <!-- Message From Customer-->
-            <!-- <div class="col-xl-4 col-lg-5 ">
+      <!-- Message From Customer-->
+      <!-- <div class="col-xl-4 col-lg-5 ">
               <div class="card">
                 <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-light">Message From Customer</h6>
@@ -312,40 +315,39 @@
                 </div>
               </div>
             </div> -->
-          </div>
-          <!--Row-->
-
-          
-
-          <!-- Modal Logout -->
-          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Are you sure you want to logout?</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
-                  <a href="login.html" class="btn btn-primary">Logout</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!---Container Fluid-->
-      </div>
-      <!-- Footer -->
-@include('layouts/admin/footer')
-      <!-- Footer -->
     </div>
+    <!--Row-->
+
+
+
+    <!-- Modal Logout -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to logout?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+            <a href="login.html" class="btn btn-primary">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!---Container Fluid-->
+  </div>
+  <!-- Footer -->
+  @include('layouts/admin/footer')
+  <!-- Footer -->
+  </div>
   </div>
 
   <!-- Scroll to top -->
@@ -353,7 +355,7 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
- 
+
 </body>
 
 </html>
